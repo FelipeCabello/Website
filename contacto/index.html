@@ -1,0 +1,646 @@
+
+<meta charset="utf-8">
+<title>Felipe Cañada</title>
+<link rel="shortcut icon" href="../img/ico.ico" />
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<!-- font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<!-- font awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+<!-- dialog -->
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+<!-- font google -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<!-- dialog -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+
+<link rel="stylesheet" type="text/css" href="../estilo.css">
+
+<style type="text/css">
+	#myBtn {
+	    display: none; /* Hidden by default */
+	    position: fixed; /* Fixed/sticky position */
+	    bottom: 20px; /* Place the button at the bottom of the page */
+	    right: 30px; /* Place the button 30px from the right */
+	    z-index: 99; /* Make sure it does not overlap */
+	    border: none; /* Remove borders */
+	    outline: none; /* Remove outline */
+	    background-color: #706fd3; /* Set a background color */
+	    color: white; /* Text color */
+	    cursor: pointer; /* Add a mouse pointer on hover */
+	    padding: 15px; /* Some padding */
+	    border-radius: 10px; /* Rounded corners */
+	    font-size: 18px; /* Increase font size */
+	}
+
+	#myBtn:hover {
+	    background-color: #555; /* Add a dark-grey background on hover */
+	}
+</style>
+
+
+<script type="text/javascript">
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	        document.getElementById("myBtn").style.display = "block";
+	    } else {
+	        document.getElementById("myBtn").style.display = "none";
+	    }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	    document.body.scrollTop = 0; // For Safari
+	    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+	$(document).ready(function(){
+		$(".menu").hover(function() {
+			$(this).css("background-color","#474787");
+				}, function() {
+			$(this).css("background-color","#222")
+		});
+	})
+</script>
+
+<div style="background-color: #222; position:fixed; top:0;width: 100%; z-index: 1;">
+	<hr style="background-color: #6d6acf; margin: 0px; height: 3px;">
+	<div class="container">
+		<div>
+			<div id="menu">
+				<a href="/Website/inicio/"><img src="../img/logo.svg" id="imgmenu"></a>
+				<ul>
+					<a href="/Website/inicio/"><li class="menu">Inicio</li></a>
+					<a href="/Website/design/"><li class="menu">Diseño</li></a>
+					<a href="/Website/contacto/"><li class="menu">Contacto</li></a>
+				</ul>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="height: 64px">
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Subir"><i class="fas fa-arrow-up"></i></button>
+
+
+
+<style type="text/css">
+	#img {
+		text-align: center;
+		margin: 0px auto;
+		padding: 15px;
+	}
+	.formulario {
+		width: 100%;
+		min-height: 30px;
+		margin-top: 40px;
+		border: 0px;
+		border-bottom: 1px solid #706fd3;
+	}
+	.formulario:focus {
+		outline: 0px;
+		border: 0px;
+		border-bottom: 2px solid #706fd3;
+	}
+	.boton {
+		color: #222;
+	    background-color: #f5f5f5;
+	    font-size: 17px;
+	    padding: 10 40px;
+	    border: 1px solid #706fd3;
+	    border-radius: 0px;
+        margin: 20 0 20 0;
+        margin-left: -60px;
+        left: 50%;
+        position: absolute;
+	}
+	.marcado {
+		color: white;
+		background-color: #706fd3;
+		border: 1px solid #706fd3;
+	}
+	.errorSpan {
+		padding-top: 5px;
+		color: #706fd3;
+	}
+	#politicas {
+		margin-right: 7px;
+	}
+	.contacto {
+		color: #706fd3;
+	}
+	.contacto:hover {
+		color: #706fd3;
+	}
+	.ui-dialog-titlebar {
+		display: none;
+	}
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		function formulario($_type) {
+			if ($_type == "1") {
+				$("#texto").css("height", "150px");
+				$("#texto").html("  -- Estoy interesado en la Página Básica. --  \n ")
+			} else if ($_type == "2") {
+				$("#texto").css("height", "150px");
+				$("#texto").html("  -- Estoy interesado en la Página Intermedia. --  \n ")
+			} else if ($_type == "3") {
+				$("#texto").css("height", "150px");
+				$("#texto").html("  -- Estoy interesado en la Página Avanzada. --  \n ")
+			}
+		}
+
+		<?php if (isset($_GET['type'])): ?>
+			
+			formulario(<?=$_GET['type']?>);
+			
+		<?php endif ?>
+
+
+		$(".boton").click(function(){
+
+			var politicas = document.getElementById("politicas");
+
+		    var nombre = $("#nombre").val();
+		    var email = $("#email").val();
+		    var asunto = $("#asunto").val();
+		    var texto = $("#texto").val();
+			
+		    if (nombre == null || nombre.length == 0 || /^\s+$/.test(nombre)) {
+		    	$("#nombre").next().html("Completa este campo");
+		    	return false;
+		    } else {
+		    	$("#nombre").next().html("");
+		    }
+
+		    if ( !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(email)) ) {
+		    	$("#email").next().html("Completa este campo con un correo eletrónico");
+		    	return false;
+		    } else {
+		    	$("#email").next().html("");
+		    }
+
+		    if (asunto == null || asunto.length == 0 || /^\s+$/.test(asunto)) {
+		    	$("#asunto").next().html("Completa este campo");
+		    	return false;
+		    } else {
+		    	$("#asunto").next().html("");
+		    }
+
+		    if (texto == null || texto.length == 0 || /^\s+$/.test(texto)) {
+		    	$("#texto").next().html("Completa este campo");
+		    	return false;
+		    } else {
+		    	$("#texto").next().html("");
+		    }
+
+			if (politicas.checked != true) {
+				$("#politicas").next().next().html("Debes aceptar las condiciones de uso y privacidad");
+		    	return false;
+			};
+
+			$("#politicas").prop("checked", false);
+
+			$("#dialog").dialog();
+			$.post("correo.php", {nombre:nombre, email:email, asunto:asunto, texto:texto}, function(data){
+				if (data) {
+					$("#dialog").dialog('close');
+					alert("No se ha podido enviar el mensaje en este momento. Intentalo de nuevo más tarde.")
+				} else {
+					$("#dialog").dialog('close');
+		        	alert("Mensaje enviado");
+				}
+		    });
+		});
+
+		$(".boton").hover(function(){
+			$(this).addClass("marcado");
+				}, function() {
+			$(this).removeClass("marcado")
+		});
+
+
+	});
+</script>
+
+
+<div style="background: #1a1a1a;">
+	<div class="container" id="imga">
+		<img src="../img/contacto3.png" style="width: 100%;">
+	</div>
+</div>
+<hr id="hr-normal">
+
+
+
+<div class="container" style="margin-top: 60px;">
+	<h1>Contacto</h1>
+	<p>Enviame tus preguntas y las respondere entre las primera 24/48 horas.</p>
+	<hr id="hr" style="margin-top: 60px">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<input type="text" id="nombre" placeholder="Nombre" class="formulario">
+			<span class="errorSpan"></span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-md-12  col-lg-6">
+			<input type="text" id="email" placeholder="Email" class="formulario">
+			<span class="errorSpan"></span>
+		</div>
+		<div class="col-sm-12 col-md-12  col-lg-6">
+			<input type="text" id="asunto" placeholder="Asunto" class="formulario">
+			<span class="errorSpan"></span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<textarea placeholder="Escribe aquí..." id="texto" style="width: 100%" class="formulario"></textarea>
+			<span class="errorSpan"></span>
+		</div>
+	</div>
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<input type="checkbox" name="políticas" id="politicas">
+			<label style="margin: 0px;">Acepto las <a href="/Website/aviso-legal/" class="contacto">condiciones de uso y privacidad</a></label>
+			<p class="errorSpan"></p>
+		</div>
+	</div>
+	<div class="row"  style="position: relative; height: 100px;">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<input type="button" value="Enviar" class="btn boton">
+			<br>
+			<br>
+		</div>
+	</div>
+</div>
+
+<div id="dialog" style="text-align: center; padding-top: 40px; display: none;">
+	<i class="fa fa-spinner fa-pulse fa-fw" style="font-size: 60px;"></i>
+	<p style="padding-top: 40px;">Enviando...</p>
+</div>
+
+
+
+
+
+
+
+
+<meta charset="utf-8">
+<title>Felipe Cañada</title>
+<link rel="shortcut icon" href="../img/ico.ico" />
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<!-- font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<!-- font awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+<!-- dialog -->
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+<!-- font google -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<!-- dialog -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+
+<link rel="stylesheet" type="text/css" href="../estilo.css">
+
+<style type="text/css">
+	#myBtn {
+	    display: none; /* Hidden by default */
+	    position: fixed; /* Fixed/sticky position */
+	    bottom: 20px; /* Place the button at the bottom of the page */
+	    right: 30px; /* Place the button 30px from the right */
+	    z-index: 99; /* Make sure it does not overlap */
+	    border: none; /* Remove borders */
+	    outline: none; /* Remove outline */
+	    background-color: #706fd3; /* Set a background color */
+	    color: white; /* Text color */
+	    cursor: pointer; /* Add a mouse pointer on hover */
+	    padding: 15px; /* Some padding */
+	    border-radius: 10px; /* Rounded corners */
+	    font-size: 18px; /* Increase font size */
+	}
+
+	#myBtn:hover {
+	    background-color: #555; /* Add a dark-grey background on hover */
+	}
+</style>
+
+
+<script type="text/javascript">
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	        document.getElementById("myBtn").style.display = "block";
+	    } else {
+	        document.getElementById("myBtn").style.display = "none";
+	    }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	    document.body.scrollTop = 0; // For Safari
+	    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+	$(document).ready(function(){
+		$(".menu").hover(function() {
+			$(this).css("background-color","#474787");
+				}, function() {
+			$(this).css("background-color","#222")
+		});
+	})
+</script>
+
+<div style="background-color: #222; position:fixed; top:0;width: 100%; z-index: 1;">
+	<hr style="background-color: #6d6acf; margin: 0px; height: 3px;">
+	<div class="container">
+		<div>
+			<div id="menu">
+				<a href="/Website/inicio/"><img src="../img/logo.svg" id="imgmenu"></a>
+				<ul>
+					<a href="/Website/inicio/"><li class="menu">Inicio</li></a>
+					<a href="/Website/design/"><li class="menu">Diseño</li></a>
+					<a href="/Website/contacto/"><li class="menu">Contacto</li></a>
+				</ul>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="height: 64px">
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Subir"><i class="fas fa-arrow-up"></i></button>
+
+
+<style type="text/css">
+	#img {
+		text-align: center;
+		margin: 0px auto;
+		padding: 15px;
+	}
+	.logo {
+		cursor:pointer; 
+		cursor: hand;
+		background: rgba(255,255,255,0);
+		background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.23) 65%, rgba(176,176,176,0.36) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(65%, rgba(255,255,255,0.23)), color-stop(100%, rgba(176,176,176,0.36)));
+		background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.23) 65%, rgba(176,176,176,0.36) 100%);
+		background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.23) 65%, rgba(176,176,176,0.36) 100%);
+		background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.23) 65%, rgba(176,176,176,0.36) 100%);
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.23) 65%, rgba(176,176,176,0.36) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b0b0b0', GradientType=0 );
+	}
+	.ojo {
+		font-size: 30px;
+		margin: 10px;
+		margin-top: 10px;
+		position: absolute;
+	}
+	h4 {
+		margin: 30px 0px;
+	}
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$(".logo").hover(function(){
+			$("#showimg").attr("src", "../img/logo2.png");
+				}, function() {
+			$("#showimg").attr("src", "../img/logo1.png");
+		});
+	});
+</script>
+
+
+
+
+<div style="background: #1a1a1a;">
+	<div class="container" id="imga">
+		<img src="../img/desing3.png" style="width: 100%;">
+	</div>
+</div>
+<hr id="hr-normal">
+
+
+
+
+<div class="container">
+	<div style="padding: 60px 0px;">
+		<div>
+			<h1>Diseño gráfico</h1>
+			<p style="color: gray;">¿Eres nuevo y necesitas crear tu marca?</p>
+			<p>Un <b>logotipo</b> es el núcleo de la identidad corporativa, define y simboliza el carácter de una empresa u organización.</p>
+		</div>
+	</div>
+	<hr id="hr">
+</div>
+
+
+
+<div class="container" style="padding: 60px 0px;">
+	<h2>¿Cómo creé mi logotipo?</h2>
+	<div class="row" style="padding: 20px 0px; margin: auto;">
+		<div class="col-sm-12 col-lg-4 logo">
+			<span><i class="far fa-eye ojo"></i></span>
+			<center>
+				<img src="../img/logo1.png" style="width: 100%;" id="showimg">
+			</center>
+		</div>
+		<div class="col-sm-12 col-lg-4" style="padding: 10px; margin: auto;">
+			<p>Utilizando una retícula conseguimos organizar y localizar todos esos elementos para que tengan unas proporciones y medidas proporcionales.</p>
+			<p>En este caso hemos usado una retícula cuadrada. Nos ayudara a darle volumen a nuestro logotipo.</p>
+			<p>Hemos usado formas simples, lo que ayuda a entender y memorizar el logotipo con mayor facilidad.</p>
+		</div>
+		<div class="col-sm-12 col-lg-4">
+			<center>
+				<img src="../img/logos.png" style="width: 100%;">
+			</center>
+		</div>
+	</div>
+</div>
+
+
+<br>
+<br>
+
+
+<div class="container" style="padding: 0px;padding-top: 100px">
+	<img src="../img/start.png" style="width: 100%">
+</div>
+
+<div class="container" style="background-color: #f7f1e3; padding-bottom: 100px">
+	<div style="text-align: center; padding: 50px;">
+		<h2>Colores utilizados</h2>
+	</div>
+	<div class="row" style="text-align: center;">
+		<div class="col-sm-6 col-lg-3">
+			<img src="../img/amarillo.png" style="width: 60%">
+			<h4>Spiced Butternut</h4>
+		</div>
+		<div class="col-sm-6 col-lg-3">
+			<img src="../img/moradoclaro.png" style="width: 60%">
+			<h4>C64 Purple</h4>			
+		</div>
+		<div class="col-sm-6 col-lg-3">
+			<img src="../img/moradooscuro.png" style="width: 60%">
+			<h4>Lucky Point</h4>
+		</div>
+		<div class="col-sm-6 col-lg-3">
+			<img src="../img/negro.png" style="width: 60%">
+			<h4>Black 90%</h4>			
+		</div>
+	</div>
+
+
+	<div style="text-align: center; padding: 100px 0px 50px 0px;">
+		<h2>Tipos de fondos</h2>
+	</div>
+	<hr id="hr-normal">
+	<div class="row" style="text-align: center;	">
+		<div class="col-sm-12 col-lg-4" >
+			<p style="padding-top: 20px;"><b>Negro</b></p>
+			<img src="../img/logonegro.png" style="width: 100%; padding: 30px;">
+		</div>
+		<div class="col-sm-12 col-lg-4" style="background-color: #706fd3;">
+			<p style="padding-top: 20px; color: white;"><b>Blanco</b></p>
+			<img src="../img/logoblanco.png" style="width: 100%; padding: 30px;">
+		</div>
+		<div class="col-sm-12 col-lg-4">
+			<p style="padding-top: 20px;"><b>A color</b></p>
+			<img src="../img/logocolor.png" style="width: 100%; padding: 30px;">
+		</div>
+	</div>
+	<hr id="hr-normal">
+</div>
+
+<div class="container" style="padding: 0px; padding-bottom: 150px;">
+	<img src="../img/end.png" style="width: 100%">
+</div>
+
+
+
+
+
+
+<div style="background-color: #ffb142; color: #fff; padding: 20px 0px;">
+	<div class="container">
+		<div style="text-align: center; padding: 10px;">
+			<h3>Tipografía</h3>
+			<br>
+			<h1>Montserrat</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-lg-12" style=" text-align: center; font-size: 50px;">
+				<p>
+					A B C D E F G H I J K L M<br>
+					N O P Q R S T V W X Y Z<br>
+					a b c d e f g h i j k l m<br>
+					n o p q r s t v w x y z<br>
+					1 2 3 4 5 6 7 8 9 0
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<br>
+<br>
+
+
+<div class="container">
+	<div style="text-align: center; padding: 10px;">
+		<h4>Mockups</h4>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-lg-12">
+			<img src="../img/tarjetasvisita.png" style="width: 100%;">
+		</div>
+		<div class="col-sm-12 col-lg-12">
+			<img src="../img/maciphone.png" style="width: 100%;">
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$(".redes").hover(function(){
+			var color = $(this).attr("fondo");
+			$(this).css("color", color);
+				}, function() {
+			$(this).css("color","white");
+		});
+	});
+</script>
+
+<div id="fin">
+	<div class="container">
+		<div class="row" style="text-align: center; padding: 5px">
+			<div class="col-6" style="margin-top: 5px;">
+				<a href="/Website/aviso-legal/">
+					Aviso legal |
+					CopyRight |
+					Política de cookies
+				</a>
+			</div>
+			<div class="col-6">
+				<div>
+					<a href="https://twitter.com/soyCaillou" class="redes" fondo="#1da1f2" target="_blank" title="Twitter">
+						<i class="fab fa-twitter iconos" fondo="red"></i>
+					</a>
+					<a href="https://www.facebook.com/FelipeccPilas" class="redes" fondo="#3d5a98" target="_blank" title="Facebook">
+						<i class="fab fa-facebook iconos"></i>
+					</a>
+					<a href="https://www.instagram.com/felipe0997/" class="redes" fondo="#e2335d" title="Instagram">
+						<i class="fab fa-instagram iconos"></i>
+					</a>
+					<a href="tel:665382792" class="redes" fondo="#00bf2e" target="_blank" title="Whatsapp">
+						<i class="fab fa-whatsapp iconos"></i>
+					</a>
+					<a href="mailto:felipecc0997@gmail.com" class="redes" fondo="#e0574b" title="Correo">
+						<i class="fas fa-envelope iconos"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

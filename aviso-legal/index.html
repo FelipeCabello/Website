@@ -1,0 +1,500 @@
+
+<meta charset="utf-8">
+<title>Felipe Cañada</title>
+<link rel="shortcut icon" href="../img/ico.ico" />
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<!-- font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<!-- font awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+<!-- dialog -->
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+<!-- font google -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<!-- dialog -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+
+<link rel="stylesheet" type="text/css" href="../estilo.css">
+
+<style type="text/css">
+	#myBtn {
+	    display: none; /* Hidden by default */
+	    position: fixed; /* Fixed/sticky position */
+	    bottom: 20px; /* Place the button at the bottom of the page */
+	    right: 30px; /* Place the button 30px from the right */
+	    z-index: 99; /* Make sure it does not overlap */
+	    border: none; /* Remove borders */
+	    outline: none; /* Remove outline */
+	    background-color: #706fd3; /* Set a background color */
+	    color: white; /* Text color */
+	    cursor: pointer; /* Add a mouse pointer on hover */
+	    padding: 15px; /* Some padding */
+	    border-radius: 10px; /* Rounded corners */
+	    font-size: 18px; /* Increase font size */
+	}
+
+	#myBtn:hover {
+	    background-color: #555; /* Add a dark-grey background on hover */
+	}
+</style>
+
+
+<script type="text/javascript">
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	        document.getElementById("myBtn").style.display = "block";
+	    } else {
+	        document.getElementById("myBtn").style.display = "none";
+	    }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	    document.body.scrollTop = 0; // For Safari
+	    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+	$(document).ready(function(){
+		$(".menu").hover(function() {
+			$(this).css("background-color","#474787");
+				}, function() {
+			$(this).css("background-color","#222")
+		});
+	})
+</script>
+
+<div style="background-color: #222; position:fixed; top:0;width: 100%; z-index: 1;">
+	<hr style="background-color: #6d6acf; margin: 0px; height: 3px;">
+	<div class="container">
+		<div>
+			<div id="menu">
+				<a href="/Website/inicio/"><img src="../img/logo.svg" id="imgmenu"></a>
+				<ul>
+					<a href="/Website/inicio/"><li class="menu">Inicio</li></a>
+					<a href="/Website/design/"><li class="menu">Diseño</li></a>
+					<a href="/Website/contacto/"><li class="menu">Contacto</li></a>
+				</ul>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="height: 64px">
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Subir"><i class="fas fa-arrow-up"></i></button>
+
+
+
+
+<style type="text/css">
+	body {
+		background-color: #706fd3
+	}
+	.contacto {
+		color: #706fd3;
+	}
+	.contacto:hover {
+		color: #706fd3;
+	}
+	p {
+		font-size: 14px;
+	}
+</style>
+
+<div class="container" style="background-color: white; margin: 50px auto; padding: 40px">
+	<h1 style="padding: 30px 0px">Política de Protección de Datos Personales y Condiciones Generales de Uso del sitio web	</h1>
+	<h2 style="padding: 15px 0px">Información Legal</h2>
+	<p>En cumplimiento de lo dispuesto en la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico, se facilitan los siguientes datos relacionados con esta página:</p>
+	<p>El titular de este sitio web es Felipe Cabello Cañada, Diseñador y Programador Web Freelance con domicilio en Sevilla. Podrá dirigirse a felipecañada.es mediante correo electrónico a través del <a href="/Website/contacto/" class="contacto">formulario de contacto</a>.</p>
+	<p>Esta información legal se completa con la Política de Protección de Datos Personales, con las Condiciones Generales de Uso del sitio web y, en su caso, con las Condiciones Particulares de cada producto o servicio recogidas en cualquiera de los sitios web de <b>Felipe Cañada Freelance</b>.</p>
+	<p><b>Felipe Cañada Freelance</b> no asume ninguna responsabilidad derivada del uso incorrecto o ilícito de la información facilitada a través de sus páginas de Internet. Asimismo, y con los límites legales, no asume ninguna responsabilidad por la falta de exactitud, integridad o actualización de los datos o informaciones que se publican en los sitios web de los que es titular. Los contenidos e informaciones suministradas no constituyen consejos o asesoramiento legal de ningún tipo, sino que forman parte de un servicio de carácter meramente informativo y divulgativo. <b>Felipe Cañada Freelance</b> tampoco se hace responsable del contenido de otras páginas de Internet a las que puedan dirigirse los links o enlaces colocados en los sitios web de <b>Felipe Cañada Freelance</b>.</p>
+	<h2 style="padding: 15px 0px">Política de Protección de Datos Personales</h2>
+	<p>El acceso a algunos de los servicios y productos ofrecidos a través de las páginas de <b>Felipe Cañada Freelance</b>, en Internet puede requerir que el usuario proporcione determinados datos de carácter personal. De acuerdo con lo dispuesto en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal, se comunica que dichos datos personales quedarán incorporados a los ficheros de <b>Felipe Cañada Freelance</b>, con la finalidad de facilitar un mejor servicio e información sobre los productos y servicios ofrecidos. La rectificación, cancelación o cualquier disposición de los datos de carácter personal obtenidos podrá realizarse por su titular directamente mediante comunicación el <a href="/Website/contacto/" class="contacto">formulario de contacto</a>.</p>
+	<h2 style="padding: 15px 0px">Condiciones Generales de Uso del sitio web</h2>
+	<p>Constituye el objeto de las presentes Condiciones regular el acceso y la utilización de este sitio web.</p>
+	<p><b>Felipe Cañada Freelance</b> se reserva la facultad de modificar, en cualquier momento y sin previo aviso, la presentación y configuración del sitio web y de los contenidos y servicios que en él se incorporan. El usuario reconoce y acepta que en cualquier momento <b>Felipe Cañada Freelance</b> pueda interrumpir, desactivar y/o cancelar cualquiera de los contenidos y servicios que se integran en el sitio web.</p>
+	<p>El acceso y la utilización de ciertos contenidos y servicios puede encontrarse sometido a determinadas condiciones propias, avisos legales, directrices y reglamentos de uso que, previamente puestos en conocimiento del usuario, y según los casos, sustituirán, completarán y/o modificarán las Condiciones Generales aquí recogidas. El acceso y la utilización de dichos contenidos y servicios implicará, por consiguiente, la plena adhesión a las Condiciones Particulares que los regulan en la versión publicada en el momento que el usuario acceda a los mismos, quedando dichas Condiciones Particulares incorporadas automáticamente a las presentes Condiciones Generales.</p>
+	<p>En caso de contradicción entre los términos y condiciones manifestados en las Condiciones Generales y en las Condiciones Particulares, prevalecerán, siempre y en todo caso, los términos acordados en este último instrumento respecto de aquellos términos incompatibles y tan sólo respecto de aquellos contenidos y servicios sometidos a dicha específica regulación. Para el acceso al sitio web el usuario debe contar con un acceso a Internet, bien sea directamente o bien indirectamente, a través de los dispositivos de acceso. Para el correcto acceso, visualización e implementación de determinados contenidos y servicios del sitio web, el usuario podrá necesitar la descarga en sus equipos informáticos de determinados programas de ordenador u otros elementos lógicos. Dicha instalación correrá a cargo del usuario, declinando <b>Felipe Cañada Freelance</b> cualquier tipo de responsabilidad que de ello se pudiera derivar.</p>
+	<p>El usuario se obliga a no acceder a los contenidos y servicios del sitio web por otros medios que no sea la interface de pantalla que <b>Felipe Cañada Freelance</b> proporciona para acceder a los mismos.</p>
+	<p><b>Felipe Cañada Freelance</b> podrá exigir para el acceso a determinados contenidos y servicios el envío de un formulario de alta. El usuario, en tal caso, deberá proporcionar la información solicitada. En relación con el proceso de registro, el usuario se obliga a:</p>
+	<p>1) Facilitar los datos veraces, exactos y completos sobre su identidad.</p>
+	<p>2) Actualizar los datos de registro para que éstos sigan siendo veraces, exactos y completos.</p>
+	<p>El usuario no podrá elegir como nombre de usuario o contraseña palabras y/o expresiones que, en general, fuesen contrarias a la ley o a las exigencias de la moral y las buenas costumbres generalmente aceptadas y, en general, palabras y/o expresiones sobre las que recaiga algún derecho que excluya la utilización por el usuario de las mismas. A tal fin, el usuario no podrá seleccionar palabras o expresiones que sean malsonantes, injuriosas, calumniosas, idénticas, similares o, en modo alguno, coincidentes con signos distintivos, denominaciones sociales, así como nombres, apellidos, nombres artísticos y/o seudónimos de terceras personas. Si el usuario facilitara cualquier dato falso, inexacto o incompleto, o si <b>Felipe Cañada Freelance</b> tuviera motivos suficientes para sospechar que dicha información fuese falsa, inexacta, incompleta, o contraria a la ley o a las exigencias de la moral y las buenas costumbres generalmente aceptadas, de conformidad con lo establecido en el párrafo anterior, <b>Felipe Cañada Freelance</b> tendrá derecho a cancelar el registro y denegar el acceso y uso, presente o futuro, del sitio web o de cualquiera de los contenidos y/o servicios en él incorporados.</p>
+	<p>Esta página web utiliza Google Analytics, un servicio analítico de web prestado por Google, Inc., una compañía de Delaware cuya oficina principal está en 1600 Amphitheatre Parkway, Mountain View (California), CA 94043, Estados Unidos (“Google”). Google Analytics utiliza “cookies”, que son archivos de texto ubicados en su ordenador, para ayudar al website a analizar el uso que hacen los usuarios del sitio web. La información que genera la cookie acerca de su uso del website (incluyendo su dirección IP) será directamente transmitida y archivada por Google en los servidores de Estados Unidos. Google usará esta información por cuenta nuestra con el propósito de seguir la pista de su uso del website, recopilando informes de la actividad del website y prestando otros servicios relacionados con la actividad del website y el uso de Internet. Google podrá transmitir dicha información a terceros cuando así se lo requiera la legislación, o cuando dichos terceros procesen la información por cuenta de Google. Google no asociará su dirección IP con ningún otro dato del que disponga Google. Puede usted rechazar el tratamiento de los datos o la información rechazando el uso de cookies mediante la selección de la configuración apropiada de su navegador, sin embargo, debe usted saber que si lo hace puede ser que no pueda usar la plena funcionabilidad de este website. Al utilizar este website usted consiente el tratamiento de información acerca de usted por Google en la forma y para los fines arriba indicados.</p>
+	<p>El usuario se compromete a hacer un uso diligente de su nombre de usuario y de su contraseña, así como a mantener ambos en secreto. Será de exclusiva responsabilidad del usuario mantener la confidencialidad de su nombre de usuario y de su contraseña, asumiendo personalmente cualesquiera actividades que se realicen o que tengan lugar mediante la utilización de los mismos.</p>
+	<p>El usuario podrá cancelar y desactivar su registro en cualquier momento utilizando su nombre de usuario y su contraseña. El usuario reconoce y acepta que <b>Felipe Cañada Freelance</b> se reserva el derecho a cancelar aquellos registros inactivos durante un período de tiempo que no fuese razonable.</p>
+	<p>El usuario se obliga a usar el sitio web y los contenidos y/o servicios que en él se incorporan de forma diligente y correcta. Asimismo, se compromete a no utilizar el sitio web:</p>
+	<p>1) Para la realización de actividades contrarias a la ley, a la moral, a las buenas costumbres aceptadas o al orden público establecido.</p>
+	<p>2) Con fines o efectos ilícitos, prohibidos o lesivos de derechos e intereses de terceros, declinando <b>Felipe Cañada Freelance</b> cualquier responsabilidad que, de todo lo anterior, se pudiera derivar.</p>
+	<p>Queda expresamente prohibido que el usuario autorice a terceros el uso, total o parcial, del sitio web o que introduzca y/o incorpore en una actividad empresarial propia los contenidos y/o servicios en él incorporados. Queda expresamente prohibido el uso o aplicación de cualesquiera recursos técnicos, lógicos o tecnológicos por virtud de los cuales los usuarios puedan beneficiarse, directa o indirectamente, con o sin lucro, de la explotación no autorizada de los contenidos y/o servicios ofrecidos o el sitio web en sí.</p>
+	<p>El usuario se obliga a abstenerse de utilizar los contenidos y servicios de cualquier forma que pueda dañar, inutilizar, sobrecargar o deteriorar el sitio web o impedir la normal utilización o disfrute del mismo por parte de otros usuarios.</p>
+	<p>El usuario se obliga a no interferir, ni interrumpir, el acceso y utilización del sitio web, servidores o redes conectados al mismo, ni incumplir los requisitos, procedimientos y regulaciones de la política de conexión de redes.</p>
+	<p>La relación jurídica derivada del acceso y la utilización del sitio web, así como de los contenidos y servicios en él incorporados, tiene una duración indefinida. Asimismo, cualquiera de las partes podrá dar por terminada o suspender la presente relación jurídica unilateralmente en cualquier momento y sin más causa que su voluntad en tal sentido.</p>
+	<p>Sin perjuicio de lo anterior, dicha relación se tendrá por terminada con carácter inmediato cuando <b>Felipe Cañada Freelance</b> publique unas nuevas Condiciones Generales. El acceso y utilización del sitio web implicará la plena adhesión y aceptación de las nuevas condiciones y, consecuentemente, el inicio de una nueva relación jurídica.</p>
+	<p><b>Felipe Cañada Freelance</b> se reserva la facultad de modificar, en cualquier momento y sin previo aviso, las presentes Condiciones Generales.</p>
+	<p>El usuario no podrá ceder, transferir, gravar o subrogar en favor de terceras partes los derechos y obligaciones establecidos en estas Condiciones Generales y, en su caso, en las Condiciones Particulares.</p>
+	<p><b>Felipe Cañada Freelance</b> podrá ceder, transferir, gravar o subrogar en favor de terceras partes, total o parcialmente, los derechos y obligaciones asumidos en virtud de la relación contractual aquí expuesta, así como la posición contractual a cualquier tercera parte, entendiéndose, por medio de la presente cláusula, que el usuario otorga autorización suficiente a tal efecto.</p>
+	<p>El sitio web es operado y controlado por <b>Felipe Cañada Freelance</b> desde sus oficinas en España. Consecuentemente, todas las cuestiones que pudieran derivarse del acceso y/o uso del mismo se entenderán reguladas e interpretadas de conformidad con la legislación española.</p>
+	<p><b>Felipe Cañada Freelance</b> y el usuario se someten, con renuncia expresa a cualquier otro fuero que pudiera corresponderles, a los Juzgados y Tribunales de Sevilla.</p>
+	<p>Para cualquier información adicional, sugerencia o propuesta póngase en contacto a través del <a href="/Website/contacto/" class="contacto">formulario de contacto</a></p>
+
+
+</div>
+
+
+
+
+
+<meta charset="utf-8">
+<title>Felipe Cañada</title>
+<link rel="shortcut icon" href="../img/ico.ico" />
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<!-- font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<!-- font awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+<!-- dialog -->
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+<!-- font google -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<!-- dialog -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+
+<link rel="stylesheet" type="text/css" href="../estilo.css">
+
+<style type="text/css">
+	#myBtn {
+	    display: none; /* Hidden by default */
+	    position: fixed; /* Fixed/sticky position */
+	    bottom: 20px; /* Place the button at the bottom of the page */
+	    right: 30px; /* Place the button 30px from the right */
+	    z-index: 99; /* Make sure it does not overlap */
+	    border: none; /* Remove borders */
+	    outline: none; /* Remove outline */
+	    background-color: #706fd3; /* Set a background color */
+	    color: white; /* Text color */
+	    cursor: pointer; /* Add a mouse pointer on hover */
+	    padding: 15px; /* Some padding */
+	    border-radius: 10px; /* Rounded corners */
+	    font-size: 18px; /* Increase font size */
+	}
+
+	#myBtn:hover {
+	    background-color: #555; /* Add a dark-grey background on hover */
+	}
+</style>
+
+
+<script type="text/javascript">
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	        document.getElementById("myBtn").style.display = "block";
+	    } else {
+	        document.getElementById("myBtn").style.display = "none";
+	    }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	    document.body.scrollTop = 0; // For Safari
+	    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+	$(document).ready(function(){
+		$(".menu").hover(function() {
+			$(this).css("background-color","#474787");
+				}, function() {
+			$(this).css("background-color","#222")
+		});
+	})
+</script>
+
+<div style="background-color: #222; position:fixed; top:0;width: 100%; z-index: 1;">
+	<hr style="background-color: #6d6acf; margin: 0px; height: 3px;">
+	<div class="container">
+		<div>
+			<div id="menu">
+				<a href="/Website/inicio/"><img src="../img/logo.svg" id="imgmenu"></a>
+				<ul>
+					<a href="/Website/inicio/"><li class="menu">Inicio</li></a>
+					<a href="/Website/design/"><li class="menu">Diseño</li></a>
+					<a href="/Website/contacto/"><li class="menu">Contacto</li></a>
+				</ul>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="height: 64px">
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="Subir"><i class="fas fa-arrow-up"></i></button>
+
+
+<style type="text/css">
+	#img {
+		text-align: center;
+		margin: 0px auto;
+		padding: 15px;
+	}
+	.logo {
+		cursor:pointer; 
+		cursor: hand;
+		background: rgba(255,255,255,0);
+		background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.23) 65%, rgba(176,176,176,0.36) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(65%, rgba(255,255,255,0.23)), color-stop(100%, rgba(176,176,176,0.36)));
+		background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.23) 65%, rgba(176,176,176,0.36) 100%);
+		background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.23) 65%, rgba(176,176,176,0.36) 100%);
+		background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.23) 65%, rgba(176,176,176,0.36) 100%);
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.23) 65%, rgba(176,176,176,0.36) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b0b0b0', GradientType=0 );
+	}
+	.ojo {
+		font-size: 30px;
+		margin: 10px;
+		margin-top: 10px;
+		position: absolute;
+	}
+	h4 {
+		margin: 30px 0px;
+	}
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$(".logo").hover(function(){
+			$("#showimg").attr("src", "../img/logo2.png");
+				}, function() {
+			$("#showimg").attr("src", "../img/logo1.png");
+		});
+	});
+</script>
+
+
+
+
+<div style="background: #1a1a1a;">
+	<div class="container" id="imga">
+		<img src="../img/desing3.png" style="width: 100%;">
+	</div>
+</div>
+<hr id="hr-normal">
+
+
+
+
+<div class="container">
+	<div style="padding: 60px 0px;">
+		<div>
+			<h1>Diseño gráfico</h1>
+			<p style="color: gray;">¿Eres nuevo y necesitas crear tu marca?</p>
+			<p>Un <b>logotipo</b> es el núcleo de la identidad corporativa, define y simboliza el carácter de una empresa u organización.</p>
+		</div>
+	</div>
+	<hr id="hr">
+</div>
+
+
+
+<div class="container" style="padding: 60px 0px;">
+	<h2>¿Cómo creé mi logotipo?</h2>
+	<div class="row" style="padding: 20px 0px; margin: auto;">
+		<div class="col-sm-12 col-lg-4 logo">
+			<span><i class="far fa-eye ojo"></i></span>
+			<center>
+				<img src="../img/logo1.png" style="width: 100%;" id="showimg">
+			</center>
+		</div>
+		<div class="col-sm-12 col-lg-4" style="padding: 10px; margin: auto;">
+			<p>Utilizando una retícula conseguimos organizar y localizar todos esos elementos para que tengan unas proporciones y medidas proporcionales.</p>
+			<p>En este caso hemos usado una retícula cuadrada. Nos ayudara a darle volumen a nuestro logotipo.</p>
+			<p>Hemos usado formas simples, lo que ayuda a entender y memorizar el logotipo con mayor facilidad.</p>
+		</div>
+		<div class="col-sm-12 col-lg-4">
+			<center>
+				<img src="../img/logos.png" style="width: 100%;">
+			</center>
+		</div>
+	</div>
+</div>
+
+
+<br>
+<br>
+
+
+<div class="container" style="padding: 0px;padding-top: 100px">
+	<img src="../img/start.png" style="width: 100%">
+</div>
+
+<div class="container" style="background-color: #f7f1e3; padding-bottom: 100px">
+	<div style="text-align: center; padding: 50px;">
+		<h2>Colores utilizados</h2>
+	</div>
+	<div class="row" style="text-align: center;">
+		<div class="col-sm-6 col-lg-3">
+			<img src="../img/amarillo.png" style="width: 60%">
+			<h4>Spiced Butternut</h4>
+		</div>
+		<div class="col-sm-6 col-lg-3">
+			<img src="../img/moradoclaro.png" style="width: 60%">
+			<h4>C64 Purple</h4>			
+		</div>
+		<div class="col-sm-6 col-lg-3">
+			<img src="../img/moradooscuro.png" style="width: 60%">
+			<h4>Lucky Point</h4>
+		</div>
+		<div class="col-sm-6 col-lg-3">
+			<img src="../img/negro.png" style="width: 60%">
+			<h4>Black 90%</h4>			
+		</div>
+	</div>
+
+
+	<div style="text-align: center; padding: 100px 0px 50px 0px;">
+		<h2>Tipos de fondos</h2>
+	</div>
+	<hr id="hr-normal">
+	<div class="row" style="text-align: center;	">
+		<div class="col-sm-12 col-lg-4" >
+			<p style="padding-top: 20px;"><b>Negro</b></p>
+			<img src="../img/logonegro.png" style="width: 100%; padding: 30px;">
+		</div>
+		<div class="col-sm-12 col-lg-4" style="background-color: #706fd3;">
+			<p style="padding-top: 20px; color: white;"><b>Blanco</b></p>
+			<img src="../img/logoblanco.png" style="width: 100%; padding: 30px;">
+		</div>
+		<div class="col-sm-12 col-lg-4">
+			<p style="padding-top: 20px;"><b>A color</b></p>
+			<img src="../img/logocolor.png" style="width: 100%; padding: 30px;">
+		</div>
+	</div>
+	<hr id="hr-normal">
+</div>
+
+<div class="container" style="padding: 0px; padding-bottom: 150px;">
+	<img src="../img/end.png" style="width: 100%">
+</div>
+
+
+
+
+
+
+<div style="background-color: #ffb142; color: #fff; padding: 20px 0px;">
+	<div class="container">
+		<div style="text-align: center; padding: 10px;">
+			<h3>Tipografía</h3>
+			<br>
+			<h1>Montserrat</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-lg-12" style=" text-align: center; font-size: 50px;">
+				<p>
+					A B C D E F G H I J K L M<br>
+					N O P Q R S T V W X Y Z<br>
+					a b c d e f g h i j k l m<br>
+					n o p q r s t v w x y z<br>
+					1 2 3 4 5 6 7 8 9 0
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<br>
+<br>
+
+
+<div class="container">
+	<div style="text-align: center; padding: 10px;">
+		<h4>Mockups</h4>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-lg-12">
+			<img src="../img/tarjetasvisita.png" style="width: 100%;">
+		</div>
+		<div class="col-sm-12 col-lg-12">
+			<img src="../img/maciphone.png" style="width: 100%;">
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$(".redes").hover(function(){
+			var color = $(this).attr("fondo");
+			$(this).css("color", color);
+				}, function() {
+			$(this).css("color","white");
+		});
+	});
+</script>
+
+<div id="fin">
+	<div class="container">
+		<div class="row" style="text-align: center; padding: 5px">
+			<div class="col-6" style="margin-top: 5px;">
+				<a href="/Website/aviso-legal/">
+					Aviso legal |
+					CopyRight |
+					Política de cookies
+				</a>
+			</div>
+			<div class="col-6">
+				<div>
+					<a href="https://twitter.com/soyCaillou" class="redes" fondo="#1da1f2" target="_blank" title="Twitter">
+						<i class="fab fa-twitter iconos" fondo="red"></i>
+					</a>
+					<a href="https://www.facebook.com/FelipeccPilas" class="redes" fondo="#3d5a98" target="_blank" title="Facebook">
+						<i class="fab fa-facebook iconos"></i>
+					</a>
+					<a href="https://www.instagram.com/felipe0997/" class="redes" fondo="#e2335d" title="Instagram">
+						<i class="fab fa-instagram iconos"></i>
+					</a>
+					<a href="tel:665382792" class="redes" fondo="#00bf2e" target="_blank" title="Whatsapp">
+						<i class="fab fa-whatsapp iconos"></i>
+					</a>
+					<a href="mailto:felipecc0997@gmail.com" class="redes" fondo="#e0574b" title="Correo">
+						<i class="fas fa-envelope iconos"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
